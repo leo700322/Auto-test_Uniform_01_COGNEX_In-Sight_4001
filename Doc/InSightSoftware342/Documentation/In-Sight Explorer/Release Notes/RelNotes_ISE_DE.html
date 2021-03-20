@@ -1,0 +1,253 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+<html>
+	<HEAD>
+		<title>In-Sight® Explorer – Versionshinweise</title> 
+		<!--(==============================================================)-->  <!--(Document created with RoboEditor. )============================--> <!--(==============================================================)-->
+		<!--(Meta)==========================================================-->
+		<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+		<meta name="generator" content="RoboHELP by eHelp Corporation - www.ehelp.com">
+		<meta name="generator-major-version" content="0.1">
+		<meta name="generator-minor-version" content="1">
+		<meta name="filetype" content="kadov">
+		<meta name="filetype-version" content="1">
+		<meta name="page-count" content="1">
+		<meta name="layout-height" content="1480">
+		<meta name="layout-width" content="1087">
+		<meta name="x-ignored-words" content="Find*;font(s;PGothic;PMincho;Genghis;www.genghisgroup.com">
+		<!--(Links)=========================================================-->
+		<link rel="StyleSheet" href="RelNotes.css">
+			<!--(Style Sheet)===================================================-->
+			<style> <!-- body { background-image: url(Logo.jpg); _: ; _: ; }
+	--></style>
+		<!--(Body)==========================================================--></HEAD>
+	<body>
+		<!--kadov_tag{{<implicit_p>}}--><img src="RNHeader.png" style="WIDTH: 664px; 											BORDER-TOP-STYLE: none; 											BORDER-RIGHT-STYLE: none; 											BORDER-LEFT-STYLE: none; 											HEIGHT: 154px; 											BORDER-BOTTOM-STYLE: none"
+			width="664" height="154" border="0">
+		<h1>In-Sight® Explorer 3.4.2 – Versionshinweise</h1>
+		<p style="FONT-STYLE: italic">18. Juli 2007&nbsp;&nbsp;09:37:00</p>
+		<p>© Copyright 1999-2007 <!--kadov_tag{{<ignored>}}--> Cognex<!--kadov_tag{{</ignored>}}--> 
+			Corporation. Alle Rechte vorbehalten.</p>
+		<h1 style="MARGIN-BOTTOM: 9pt">Übersicht</h1>
+		<p>Version 3.4.2 ist eine „Service-Release“ der In-Sight 
+			Explorer-Software/Firmware. Diese Version umfasst Änderungen und 
+			Fehlerkorrekturen einschließlich Änderungen in den Dialogfeldern „Diskreter 
+			Eingang“ und „Diskreter Ausgang“, die jetzt das In-Sight 
+			1400-E/A-Erweiterungsmodul unterstützen, und eine Aktualisierung der Firmware 
+			von Sensoren der In-Sight 5600-Serie.</p>
+		<p class="Bullet">Service-Release 3.4.2 wurde der Firmware/Softwareversion 3.4.1 
+			hinzugefügt und umfasst die Korrekturen dieser Version. Diese Service-Release 
+			umfasst keine neuen Funktion. Die mit Version 3.4.0 eingeführten neuen 
+			Funktionen sind in den
+			<span style="FONT-STYLE: italic">In-Sight ® Explorer 3.4.0-Versionshinweisen</span>
+			beschrieben. Die
+			<span style="FONT-STYLE: italic">In-Sight ® Explorer 3.4.0-Versionshinweise</span>
+			enthalten auch Informationen über Systemanforderungen, bekannte Probleme und 
+			den Versionsverlauf.</p>
+		<p class="Bullet">Aktualisierte Versionshinweise, Dokumentation und mehr finden Sie 
+			im In-Sight Online Support Center unter: <a href="http://www.cognex.com/products/InSight/Support.asp">
+				www.cognex.com/support/In-Sight.asp</a>
+		</p>
+		<h1>3.4.2-Änderungen und behobene Fehler</h1>
+		<p class="Bullet"><b style="FONT-WEIGHT: bold">HINWEIS</b>: Mithilfe der (falls 
+			zutreffend) hinzugefügten Änderungsauftragsnummern (<!--kadov_tag{{<ignored>}}-->  CR#<!--kadov_tag{{</ignored>}}--> , Change Request Numbers) können die vom 
+			technischen Support von <!--kadov_tag{{<ignored>}}--> Cognex<!--kadov_tag{{</ignored>}}--> 
+			zusammengestellten bekannten Probleme besser protokolliert werden.</p>
+		<ul>
+			<li style=" COLOR: #000000" class="kadov-p-CBullet">
+				<p class="Bullet"><font style="COLOR: #000000" color="#000000">Die Dialogfelder 
+						„Einstellungen diskrete Eingänge“ und „Einstellungen diskrete Ausgänge“ wurden 
+						geändert und unterstützen jetzt das In-Sight 1400-E/A-Erweiterungsmodul.</font></p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">Das Kuka Robot-Protokoll zur seriellen Kommunkation wurde 
+					geändert und sendet jetzt vor dem Verarbeiten von Befehlen im Native Mode die 
+					DLE-Antwort. Bisher wurde die Bestätigung erst nach der Verarbeitung des 
+					Befehls gesendet, wodurch in manchen Fällen beim Versuch, eine große 
+					Parametersatzdatei zu laden, das Zeitlimit überschritten wurde. (CR# 49787)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">Sensoren der In-Sight 5600-Serie laden jetzt korrekt große 
+					Parametersatzdateien, die bestimmte PatMax-Funktionen enthalten. Bisher wurde 
+					beim Versuch, eine große Parametersatzdatei mit mehreren PatMax-Funktionen zu 
+					laden, die Sensorverbindung zum Netzwerk getrennt, und der nicht mehr 
+					reagierende Sensor musste durch Aus-/Einschalten neu gestartet werden. (CR# 
+					50762)
+				</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">
+					Die Funktionen ScaleImage (Vision Tools --&gt; Image) und VerifyText (Vision 
+					Tools --&gt; OCV/OCR) wurden geändert und geben jetzt das korrekte Bild aus, 
+					wenn sie in Verbindung mit einer Teilaufnahme verwendet werden. Bisher wurde 
+					mit diesen Funktionen bei deren Verwendung mit einer Teilaufnahme in manchen 
+					Fällen ein beschädigtes Bild ausgegeben. (CR# 50931)</p>
+			</li>
+		</ul>
+		<h1>3.4.1-Änderungen und behobene Fehler</h1>
+		<p><b style="FONT-WEIGHT: bold">HINWEIS</b>: Mithilfe der (falls zutreffend) 
+			hinzugefügten Änderungsauftragsnummern (CR# 
+			<!--kadov_tag{{</ignored>}}--> , 
+			Change Request Numbers) können die vom technischen Support von 
+			<!--kadov_tag{{<ignored>}}--> 
+			Cognex 
+			<!--kadov_tag{{</ignored>}}-->
+			zusammengestellten bekannten Probleme besser protokolliert werden.</p>
+		<ul>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">Behebt ein Problem, bei dem hochauflösende In-Sight 5603- und 
+					5403-Sensoren unerwartet Trigger verpassen, wenn Funktionen mit hoher 
+					Prozessor- oder Arbeitsspeicherbeanspruchung in Verbindung mit der In-Sight 
+					Explorer-Anzeige von Inspektionsergebnissen ausgeführt werden. (CR# 50393)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">In-Sight-Sensoren der Serie 5600 verursachen bei rechenintensiven 
+					Funktionen keine Bildbeschädigung mehr. Bisher wurde in manchen Fällen das Bild 
+					beschädigt, mitunter reagierte auch der Sensor nicht mehr. (CR# 50385)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">Korrigiert ein Problem aller In-Sight 5600-Sensoren, auf denen 
+					Firmware Version 3.4.0 ausgeführt wird. 
+					<!--kadov_tag{{<spaces>}}--> &nbsp; 
+					<!--kadov_tag{{</spaces>}}-->
+					Nachdem der Benutzer das gesamte Flashdateisystem des Sensors mehrmals 
+					vollständig gefüllt und geleert hat, besteht ein sehr geringes Risiko, dass der 
+					Sensor bei einem Folgestart nicht mehr funktioniert. Die Firmware aller 
+					In-Sight 5600-Sensoren sollte auf Version 3.4.1 aktualisiert werden. Dieses 
+					Problem wirkt sich auf keine anderen In-Sight-Sensormodelle oder 
+					Firmwareversionen aus. (CR #49919)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">Die 
+					<!--kadov_tag{{<ignored>}}--> Stringf 
+					<!--kadov_tag{{</ignored>}}--> 
+					-Funktion wurde verbessert und gibt jetzt weitere Informationszeichenfolgen im 
+					Arbeitsblatt aus: die Firmwareversion (“%V”); den Systemtyp, mit dem der 
+					Benutzer verbunden ist (“% 
+					<!--kadov_tag{{<ignored>}}--> T 
+					<!--kadov_tag{{</ignored>}}--> 
+					”); die MAC-Adresse (“% 
+					<!--kadov_tag{{<ignored>}}--> M 
+					<!--kadov_tag{{</ignored>}}--> 
+					”); und die Seriennummer des Sensors ("% 
+					<!--kadov_tag{{<ignored>}}--> N 
+					<!--kadov_tag{{</ignored>}}--> 
+					"). 
+					<!--kadov_tag{{<spaces>}}--> &nbsp; 
+					<!--kadov_tag{{</spaces>}}--> (CR# 
+					<!--kadov_tag{{</ignored>}}-->
+					28899/44109)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">Rockwell RSLogix 5000-Add-On-Profile wurden implementiert, um die 
+					Integration in 
+					<!--kadov_tag{{<ignored>}}--> Cognex 
+					<!--kadov_tag{{</ignored>}}--> 
+					In-Sight Vision-Sensoren und RSLogix 5000 zu erleichtern. Das 
+					Installationsprogramm befindet sich auf der In-Sight-Software-CD-ROM und 
+					aktualisiert eine vorhandene Installation von RSLogix 5000; RSLogix 5000 
+					Version 15.00 oder höher muss zur Verwendung dieser Add-On-Profile installiert 
+					sein. (CR# 
+					<!--kadov_tag{{</ignored>}}-->
+					49914/42099)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">Der Parameter
+					<span style="FONT-STYLE: italic">Modus</span>
+					der ReadIDCode-Funktion wurde geändert und die Einstellung von
+					<span style="FONT-STYLE: italic">Hohe Geschwindigkeit/Hoher Kontrast</span>
+					funktioniert jetzt korrekt für Code 128, Code 39, Code I2of5, Code 93, UPC-, 
+					EAN- und DataMatrix-Codes und ist jetzt korrekt für Postleitzahlen deaktiviert. 
+					Bei aktiviertem Kontrollkästchen
+					<span style="FONT-STYLE: italic">Algorithmus</span>
+					führt die Einstellung des Parameters
+					<span style="FONT-STYLE: italic">Modus</span>
+					auf
+					<span style="FONT-STYLE: italic">Hohe Geschwindigkeit/Hoher Kontrast</span>
+					zu schnelleren Decodierungszeiten bei gut lesbarem Code 128, Code 39, Code 
+					I2of5, Code 93 und UPC-, EAN- und DataMatrix-Codes. Bisher war der Parameter
+					<span style="FONT-STYLE: italic">Modus</span>
+					für diese Codetypen nicht aktiviert und fälschlicherweise für Postleitzahlen 
+					aktiviert. Die Decodierzeiten wurden daher nicht verbessert, wenn der Parameter 
+					auf
+					<span style="FONT-STYLE: italic">Hohe Geschwindigkeit/Hoher Kontrast</span>
+					gesetzt war. (CR# 
+					<!--kadov_tag{{</ignored>}}-->
+					49842)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">
+					<!--kadov_tag{{<ignored>}}--> ValidateIDCode 
+					<!--kadov_tag{{</ignored>}}--> 
+					überprüft jetzt korrekt DoDAAC-Codes, die sowohl Alphazeichen als auch 
+					numerische Zeichen enthalten. Bisher hat 
+					<!--kadov_tag{{<ignored>}}--> 
+					ValidateIDCode 
+					<!--kadov_tag{{</ignored>}}-->
+					<!--kadov_tag{{<ignored>}}--> DoDAAC-Codes mit Alphazeichen als ungültig 
+					bewertet. (CR# 
+					<!--kadov_tag{{</ignored>}}-->
+					49920)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">Die 
+					<!--kadov_tag{{<ignored>}}-->
+					LatchImage-Funktion gibt jetzt beim Programmieren im Emulator #ERR zurück, wenn 
+					die Einstellungen „Hoch“ oder „Breit“ des Parameters
+					<span style="FONT-STYLE: italic">Bereich</span>
+					auf eine leere Zelle verweisen. Wurde bisher die 
+					<!--kadov_tag{{<ignored>}}-->
+					LatchImage-Funktion im Emulator verwendet und haben entweder die „Hoch“- oder 
+					„Breit“-Einstellungen des Parameters
+					<span style="FONT-STYLE: italic">Bereich</span>
+					auf eine leere Zelle verwiesen, hat der Emulator nicht mehr reagiert. (CR# 
+					<!--kadov_tag{{</ignored>}}-->
+					50019)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">In-Sight Explorer kann jetzt umfangreichere Parametersatzdateien 
+					eines Sensors der 5600-Serie auf einem PC speichern. Bisher wurde In-Sight 
+					Explorer beim Versuch, eine über 1,8&nbsp;MB große Parametersatzdatei zu 
+					speichern, vorübergehend vom Sensor getrennt, und der Parametersatz wurde nicht 
+					auf dem PC gespeichert. (CR# 49835)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">Die GetAllTime-Funktion gibt jetzt den korrekten Wert zurück, 
+					wenn „Ergebniswarteschlange“ aktiviert ist. Bisher gab die GetAllTime-Funktion 
+					bei aktivierter „Ergebniswarteschlange“ einen falschen (niedrigeren) Wert 
+					zurück. (CR# 49722)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">Der In-Sight-Verbindungs-Manager funktioniert jetzt korrekt, wenn 
+					er auf einem Microsoft® Windows® 2003 Server-System mit einer Gatewayadresse 
+					0.0.0.0 ausgeführt wird. Bisher hat der In-Sight-Verbindungs-Manager nicht mehr 
+					reagiert, wenn die MAC-Adresse eines In-Sight-Sensors eingegeben und angewendet 
+					wurde. (CR# 49826)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">In-Sight Explorer wird jetzt auf einem Windows 2003-Server, auf 
+					dem Windows Installer 3.0 nicht installiert ist, korrekt installiert. Bisher 
+					trat ein InstallShield Fehler 1603 auf, wenn In-Sight Explorer 3.4.0 auf einem 
+					Windows 2003-Server ohne Windows Installer 3.0 installiert wurde. (CR# 49827)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">Die CalibrateImage-Funktion zeigt jetzt korrekt Ergebnisse an, 
+					wenn auf Daten einer importierten CalibrateGrid-Funktion verwiesen wird. Bisher 
+					gab die CalibrateImage-Funktion beim Verweis auf importierte 
+					CalibrateGrid-Daten #ERR zurück. (CR# 46406)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">Die ImageMath-Funktion wurde geändert und wird jetzt korrekt 
+					angezeigt (Vision Tools --&gt; Image). Bisher wurde die Funktion nicht korrekt 
+					aktiviert und nicht angezeigt. (CR# 43885/49630)
+				</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">Der Bildstreifen „Ergebniswarteschlange“ bleibt bei deaktivierter 
+					Ergebniswarteschlange deaktiviert, wenn eine Jobansicht erneut geöffnet und das 
+					Layout der Jobansicht mit der Option „Layout speichern“ gespeichert wird. 
+					Bisher wurde der Bildstreifen „Ergebniswarteschlange“ bei jedem Öffnen einer 
+					Jobansicht angezeigt, unabhängig vom Status der Anzeige nach Verwendung der 
+					Option „Layout speichern“. (CR# 49266)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">Die Parameter
+					<span style="FONT-STYLE: italic">Startzeile</span>
+					und
+					<span style="FONT-STYLE: italic">Anzahl der Zeilen</span>
+					der AcquireImage-Funktion geben jetzt korrekt eine Teilaufnahme zurück, wenn 
+					sie mit Farbsensoren der In-Sight 5000-Serie verwendet werden. Bisher waren 
+					diese Parameter bei Verwendung eines Farbsensors deaktiviert. (CR# 36036)
+				</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">Gemäß EtherNet/IP-Spezifikation wurde der 
+					TTL-für-EtherNet/IP-Multicast-Datenverkehr von 7 zu 1 geändert. Diese Änderung 
+					beschränkt den Multicast-Datenverkehr auf ein einzelnes Subnetz. (CR# 50000)</p>
+			</li>
+		</ul>
+		<p>-------</p>
+		<p>&nbsp;</p>
+		<p>Teilweise urheberrechtlich geschützt © 2002-2004 The Genghis Group (<a href="http://www.genghisgroup.com">http://www.genghisgroup.com</a>).</p>
+	</body>
+</html>

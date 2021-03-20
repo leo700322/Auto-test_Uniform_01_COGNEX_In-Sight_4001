@@ -1,0 +1,203 @@
+/*=(===============================================================)*/
+
+/*=(===============================================================)*/
+/*=(Created with RoboEditor.)=======================================*/
+/*=(===============================================================)*/
+
+H1 {
+	font-size: 18pt;
+	font-family: Arial, sans-serif;
+}
+
+/*=(Generated Code)=================================================*/
+/*=(WARNING: DO NOT EDIT OR DELETE THIS SECTION!)===================*/
+/*begin!kadov{{=====================================================*/ 
+LI.kadov-H1 {
+	font-size: 18pt;
+	font-family: Arial, sans-serif;
+}
+/*}}end!kadov=======================================================*/ 
+
+
+
+H2 {
+	page-break-before: always;
+	font-size: 18pt;
+	font-family: Arial, sans-serif;
+	margin-bottom: 9.5pt;
+}
+
+/*=(Generated Code)=================================================*/
+/*=(WARNING: DO NOT EDIT OR DELETE THIS SECTION!)===================*/
+/*begin!kadov{{=====================================================*/ 
+LI.kadov-H2 {
+	font-size: 18pt;
+	font-family: Arial, sans-serif;
+}
+/*}}end!kadov=======================================================*/ 
+
+
+
+P {
+	font-family: Arial, sans-serif;
+	font-size: 9pt;
+	margin-top: 4.5pt;
+	margin-bottom: 0pt;
+}
+
+/*=(Generated Code)=================================================*/
+/*=(WARNING: DO NOT EDIT OR DELETE THIS SECTION!)===================*/
+/*begin!kadov{{=====================================================*/ 
+LI.kadov-P {
+	font-family: Arial, sans-serif;
+	font-size: 9pt;
+}
+/*}}end!kadov=======================================================*/ 
+
+
+
+H3 {
+	font-size: 12pt;
+	font-family: Arial, sans-serif;
+}
+
+/*=(Generated Code)=================================================*/
+/*=(WARNING: DO NOT EDIT OR DELETE THIS SECTION!)===================*/
+/*begin!kadov{{=====================================================*/ 
+LI.kadov-H3 {
+	font-size: 12pt;
+	font-family: Arial, sans-serif;
+}
+/*}}end!kadov=======================================================*/ 
+
+
+
+H4 {
+
+	font-size: 10pt;
+	font-family: Arial, sans-serif;
+}
+
+/*=(Generated Code)=================================================*/
+/*=(WARNING: DO NOT EDIT OR DELETE THIS SECTION!)===================*/
+/*begin!kadov{{=====================================================*/ 
+LI.kadov-H4 {
+	font-weight: normal;
+	font-style: normal;
+	font-family: Arial, sans-serif;
+}
+/*}}end!kadov=======================================================*/ 
+
+
+
+P.Bullet {
+	list-style: square;
+	margin-left: 0px;
+	margin-top: 4.5pt;
+	margin-bottom: 0pt;
+}
+
+/*=(Generated Code)=================================================*/
+/*=(WARNING: DO NOT EDIT OR DELETE THIS SECTION!)===================*/
+/*begin!kadov{{=====================================================*/ 
+LI.kadov-P-CBullet {
+	list-style: square;
+}
+/*}}end!kadov=======================================================*/ 
+
+
+
+P.IndentBullet {
+	margin-left: 18pt;
+	list-style: circle;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+}
+
+/*=(Generated Code)=================================================*/
+/*=(WARNING: DO NOT EDIT OR DELETE THIS SECTION!)===================*/
+/*begin!kadov{{=====================================================*/ 
+LI.kadov-P-CIndentBullet {
+	list-style: circle;
+}
+/*}}end!kadov=======================================================*/ 
+
+
+
+body {
+	background-image: url("logo.jpg");
+	background-position: Center Center;
+	background-attachment: fixed;
+	background-repeat: No-Repeat;
+}
+
+P.NumberedList {
+	margin-bottom: 4.5pt;
+	list-style: decimal;
+	font-size: 9pt;
+	font-weight: normal;
+	font-style: normal;
+	font-family: Arial, sans-serif;
+}
+
+/*=(Generated Code)=================================================*/
+/*=(WARNING: DO NOT EDIT OR DELETE THIS SECTION!)===================*/
+/*begin!kadov{{=====================================================*/ 
+LI.kadov-P-CNumberedList {
+	list-style: decimal;
+	font-size: 9pt;
+	font-weight: normal;
+	font-style: normal;
+	font-family: Arial, sans-serif;
+}
+/*}}end!kadov=======================================================*/ 
+
+
+
+H6.NumberListIndent {
+	list-style: lower-alpha;
+	font-size: 9pt;
+	font-weight: normal;
+	font-style: normal;
+	font-family: Arial, sans-serif;
+	margin-left: 18pt;
+	margin-top: 4.5pt;
+	margin-bottom: 4.5pt;
+}
+
+/*=(Generated Code)=================================================*/
+/*=(WARNING: DO NOT EDIT OR DELETE THIS SECTION!)===================*/
+/*begin!kadov{{=====================================================*/ 
+LI.kadov-H6-CNumberListIndent {
+	list-style: lower-alpha;
+	font-size: 9pt;
+	font-weight: normal;
+	font-style: normal;
+	font-family: Arial, sans-serif;
+}
+/*}}end!kadov=======================================================*/ 
+
+
+
+H5 {
+	font-family: Arial, sans-serif;
+	font-style: bold;
+	font-weight: normal;
+	font-size: 10pt;
+}
+
+/*=(Generated Code)=================================================*/
+/*=(WARNING: DO NOT EDIT OR DELETE THIS SECTION!)===================*/
+/*begin!kadov{{=====================================================*/ 
+LI.kadov-H5 {
+	font-family: Arial, sans-serif;
+	font-style: bold;
+	font-weight: normal;
+	font-size: 10pt;
+}
+/*}}end!kadov=======================================================*/ 
+
+
+
+
+/*=(===============================================================)*/

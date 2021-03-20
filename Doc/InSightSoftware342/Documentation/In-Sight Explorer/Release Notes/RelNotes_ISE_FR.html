@@ -1,0 +1,282 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+<html>
+	<HEAD>
+		<title>Notes de mise à jour du microprogramme In-Sight® Explorer</title> 
+		<!--(==============================================================)-->  <!--(Document created with RoboEditor. )============================--> <!--(==============================================================)-->
+		<!--(Meta)==========================================================-->
+		<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+		<meta name="generator" content="RoboHELP by eHelp Corporation - www.ehelp.com">
+		<meta name="generator-major-version" content="0.1">
+		<meta name="generator-minor-version" content="1">
+		<meta name="filetype" content="kadov">
+		<meta name="filetype-version" content="1">
+		<meta name="page-count" content="1">
+		<meta name="layout-height" content="1480">
+		<meta name="layout-width" content="1087">
+		<meta name="x-ignored-words" content="Find*;font(s;PGothic;PMincho;Genghis;www.genghisgroup.com">
+		<!--(Links)=========================================================-->
+		<link rel="StyleSheet" href="RelNotes.css">
+			<!--(Style Sheet)===================================================-->
+			<style> <!-- body { background-image: url(Logo.jpg); _: ; _: ; }
+	--></style>
+		<!--(Body)==========================================================--></HEAD>
+	<body>
+		<!--kadov_tag{{<implicit_p>}}--><img src="RNHeader.png" style="WIDTH: 664px; 											BORDER-TOP-STYLE: none; 											BORDER-RIGHT-STYLE: none; 											BORDER-LEFT-STYLE: none; 											HEIGHT: 154px; 											BORDER-BOTTOM-STYLE: none"
+			width="664" height="154" border="0">
+		<h1>Notes de mise à jour du microprogramme In-Sight® Explorer 3.4.2</h1>
+		<p style="FONT-STYLE: italic"><!--kadov_tag{{<variable name=date 														x-value=39280.401215 														x-format="mmmm d, yyyy">}}--> 
+			18&nbsp;juillet 2007<!--kadov_tag{{</variable>}}--> <!--kadov_tag{{<variable name=time 	x-value=39280.401215>}}-->  09:37<!--kadov_tag{{</variable>}}--></p>
+		<p>© Copyright 1999-2007 <!--kadov_tag{{<ignored>}}--> Cognex<!--kadov_tag{{</ignored>}}--> 
+			Corporation. Tous droits réservés.</p>
+		<h1 style="MARGIN-BOTTOM: 9pt">Présentation</h1>
+		<p>La mise à jour 3.4.2 est une mise à jour de service du microprogramme/logiciel 
+			In-Sight Explorer. Cette mise à jour contient des modifications et des 
+			solutions à plusieurs problèmes connus, y compris des modifications aux boîtes 
+			de dialogue Paramètres Entrées discrètes et Paramètres Sorties discrètes afin 
+			de permettre la prise en charge du module d'extension E/S In-Sight 1400 et une 
+			mise à jour du microprogramme des capteurs In-Sight 5600.</p>
+		<p class="Bullet">La mise à jour de service 3.4.2 a été ajoutée à la mise à jour 
+			3.4.1 du microprogramme/logiciel et contient les solutions fournies dans cette 
+			mise à jour. Cette mise à jour de service ne contient aucune nouvelle fonction. 
+			La version 3.4.0 présentait des nouvelles fonctions décrites dans les
+			<span style="FONT-STYLE: italic">Notes de mise à jour du microprogramme In-Sight® Explorer 3.4.0</span>. 
+			Pour des informations sur la configuration système requise, les problèmes 
+			connus et l'historique des mises à jour, consultez les
+			<span style="FONT-STYLE: italic">Notes de mise à jour du microprogramme In-Sight® Explorer 3.4.0</span>.</p>
+		<p class="Bullet">Pour obtenir les dernières notes de mise à jour, la documentation 
+			et autres, rendez-vous sur le Centre de support et d'apprentissage, à 
+			l'adresse&nbsp;: <a href="http://www.cognex.com/products/InSight/Support.asp">www.cognex.com/support/In-Sight.asp</a>
+		</p>
+		<h1>Modifications et corrections de la mise à jour 3.4.2</h1>
+		<p class="Bullet"><b style="FONT-WEIGHT: bold">REMARQUE</b>&nbsp;: des numéros de 
+			demande de modification (<!--kadov_tag{{<ignored>}}--> n° CR<!--kadov_tag{{</ignored>}}--> 
+			) ont été inclus (lorsque cela est applicable) pour améliorer le suivi des 
+			problèmes connus, rapportés par l'intermédiaire du support technique de <!--kadov_tag{{<ignored>}}-->  Cognex<!--kadov_tag{{</ignored>}}--> .</p>
+		<ul>
+			<li style=" COLOR: #000000" class="kadov-p-CBullet">
+				<p class="Bullet"><font style="COLOR: #000000" color="#000000">Les boîtes de dialogue 
+						Paramètres Entrées discrètes et Paramètres Sorties discrètes ont été modifiées 
+						afin de permettre la prise en charge du module d'extension E/S In-Sight 1400.</font></p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">Le protocole de communications série des robots Kuka a été 
+					modifié de manière à envoyer une réponse DLE avant de traiter les commandes du 
+					mode natif. Auparavant, la réponse n'était envoyée qu'une fois la commande 
+					traitée, ce qui pouvait entraîner un dépassement du délai d'attente du robot 
+					lors d'une tentative de chargement d'un fichier de projet volumineux. (n° CR 
+					49787)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">Les capteurs In-Sight 5600 chargent désormais correctement les 
+					fichiers de projet volumineux qui contiennent certaines fonctions PatMax. 
+					Auparavant, il arrivait que le capteur se déconnecte du réseau et ne réponde 
+					plus lors d'une tentative de chargement d'un fichier de projet volumineux qui 
+					contenait plusieurs fonctions PatMax, obligeant à redémarrer le capteur. (n° CR 
+					50762)
+				</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">Les fonctions ScaleImage (Outils de vision --&gt; Image) et 
+					VerifyText (Outils de vision --&gt; OCV/OCR) ont été modifiées de façon à 
+					afficher l'image correcte lorsqu'elles sont utilisées en combinaison avec une 
+					acquisition partielle. Auparavant, lorsque ces fonctions étaient utilisées en 
+					combinaison avec une image partiellement acquise, l'image générée pouvait être 
+					corrompue. (n° CR 50931)</p>
+			</li>
+		</ul>
+		<h1>Modifications et corrections de la mise à jour 3.4.1</h1>
+		<p><b style="FONT-WEIGHT: bold">REMARQUE</b>&nbsp;: des numéros de demande de 
+			modification ( 
+			<!--kadov_tag{{<ignored>}}--> n° CR 
+			<!--kadov_tag{{</ignored>}}--> 
+			) ont été inclus (lorsque cela est applicable) pour améliorer le suivi des 
+			problèmes connus, rapportés par l'intermédiaire du support technique de 
+			<!--kadov_tag{{<ignored>}}--> 
+			Cognex 
+			<!--kadov_tag{{</ignored>}}-->
+			.</p>
+		<ul>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">Corrige un problème d'échec inattendu des déclencheurs 
+					d'acquisition des capteurs haute résolution In-Sight 5603 et 5403, lors de 
+					l'exécution de fonctions à fort pourcentage de calculs ou de mémoire en 
+					association avec l'utilisation des résultats d'inspection d'In-Sight Explorer. 
+					(n° CR 50393)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">Sur les capteurs In-Sight série 5600, lors de l'exécution de 
+					fonctions à fort pourcentage de calculs, la corruption des images ne se produit 
+					plus. Autrefois, il arrivait que l'image devienne corrompue, et dans certains 
+					cas le capteur ne répondait pas. (n° CR 50385)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">Corrige un problème qui concerne tous les capteurs In-Sight 5600 
+					exécutant le microprogramme version 3.4.0. 
+					<!--kadov_tag{{<spaces>}}-->
+					<!--kadov_tag{{</spaces>}}-->
+					Si l'utilisateur avait totalement rempli et effacé le système de fichiers flash 
+					du capteur à plusieurs reprises, le risque que le capteur ne devienne 
+					inexploitable lors d'un prochain redémarrage est minime. Le microprogramme de 
+					tous les capteurs In-Sight 5600 devrait être mis à niveau vers la version 
+					3.4.1. Ce problème n'affecte aucun autre modèle de capteurs In-Sight ni aucune 
+					autre version du microprogramme. (n° CR 49919)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">La fonction 
+					<!--kadov_tag{{<ignored>}}--> Stringf 
+					<!--kadov_tag{{</ignored>}}--> 
+					a été améliorée pour retourner des chaînes de caractères informatives 
+					supplémentaires dans le tableur&nbsp;: la version du microprogramme ("%V"), le 
+					type de système auquel est connecté l'utilisateur ("% 
+					<!--kadov_tag{{<ignored>}}--> 
+					T 
+					<!--kadov_tag{{</ignored>}}--> "), l'adresse MAC ("% 
+					<!--kadov_tag{{<ignored>}}--> 
+					M 
+					<!--kadov_tag{{</ignored>}}--> ") et le numéro de série du capteur ("% 
+					<!--kadov_tag{{<ignored>}}--> 
+					N 
+					<!--kadov_tag{{</ignored>}}--> "). 
+					<!--kadov_tag{{<spaces>}}--> &nbsp; 
+					<!--kadov_tag{{</spaces>}}--> 
+					( 
+					<!--kadov_tag{{<ignored>}}--> n° CR 
+					<!--kadov_tag{{</ignored>}}-->
+					28899/44109)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">Des profils supplémentaires RSLogix 5000 ont été implémentés pour 
+					faciliter l'intégration entre les capteurs de vision In-Sight 
+					<!--kadov_tag{{<ignored>}}--> 
+					Cognex 
+					<!--kadov_tag{{</ignored>}}--> et RSLogix 5000. Le programme 
+					d'installation se trouve sur le CD-ROM du logiciel In-Sight et mettra à jour 
+					les installations existantes de RSLogix 5000. La version 15.00 ou supérieure de 
+					RSLogix 5000 doit être installée pour pouvoir utiliser ces profils 
+					supplémentaires. ( 
+					<!--kadov_tag{{<ignored>}}--> n° CR 
+					<!--kadov_tag{{</ignored>}}-->
+					49914/42099)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">Le paramètre
+					<span style="FONT-STYLE: italic">Mode</span>
+					de la fonction 
+					<!--kadov_tag{{<ignored>}}--> ReadIDCode 
+					<!--kadov_tag{{</ignored>}}-->
+					a été modifié et le paramètre
+					<span style="FONT-STYLE: italic">Haute vitesse&nbsp;/ Haut contraste</span>
+					est désormais correctement activé pour les codes UPC, EAN, DataMatrix, Code 
+					128, Code 39, Code I2of5 et Code 93 tout en étant correctement désactivé pour 
+					les codes postaux. Lorsque la case
+					<span style="FONT-STYLE: italic">Algorithme</span>
+					est cochée, la configuration du paramètre
+					<span style="FONT-STYLE: italic">Mode</span>
+					sur
+					<span style="FONT-STYLE: italic">Haute vitesse&nbsp;/ Haut contraste</span>
+					peut accélérer les temps de décodage des codes UPC, EAN, DataMatrix, Code 128, 
+					Code 39, Code I2of5 et Code 93 s'ils sont bien imprimés. Auparavant, le 
+					paramètre
+					<span style="FONT-STYLE: italic">Mode</span>
+					n'était pas activé pour ces types de code et incorrectement activé pour les 
+					codes postaux, ce qui n'améliorait en rien le temps de décodage lorsque le 
+					paramètre était configuré sur
+					<span style="FONT-STYLE: italic">Haute vitesse&nbsp;/ Haut contraste</span>. ( 
+					<!--kadov_tag{{<ignored>}}--> 
+					n° CR 
+					<!--kadov_tag{{</ignored>}}-->
+					49842)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">
+					<!--kadov_tag{{<ignored>}}--> ValidateIDCode 
+					<!--kadov_tag{{</ignored>}}--> 
+					valide désormais correctement les codes 
+					<!--kadov_tag{{<ignored>}}--> DoDAAC 
+					<!--kadov_tag{{</ignored>}}--> 
+					contenant des caractères alphanumériques. Auparavant, 
+					<!--kadov_tag{{<ignored>}}--> 
+					ValidateIDCode 
+					<!--kadov_tag{{</ignored>}}--> signalait les codes 
+					<!--kadov_tag{{<ignored>}}--> 
+					DoDAAC 
+					<!--kadov_tag{{</ignored>}}--> contenant des caractères alphabétiques 
+					comme non valides. ( 
+					<!--kadov_tag{{<ignored>}}--> n° CR 
+					<!--kadov_tag{{</ignored>}}-->
+					49920)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">La fonction 
+					<!--kadov_tag{{<ignored>}}-->
+					LatchImage, lorsqu'elle est programmée dans l'émulateur, renvoie désormais le 
+					message #ERR si les réglages Hauteur et Largeur du paramètre
+					<span style="FONT-STYLE: italic">Région</span>
+					font référence à une cellule vide. Auparavant, lorsque la fonction 
+					<!--kadov_tag{{<ignored>}}--> 
+					LatchImage 
+					<!--kadov_tag{{</ignored>}}-->
+					était utilisée dans l'émulateur et qu'un des réglages Hauteur ou Largeur du 
+					paramètre
+					<span style="FONT-STYLE: italic">Région</span>
+					faisait référence à une cellule vide, l'émulateur arrêtait de répondre. ( 
+					<!--kadov_tag{{<ignored>}}--> 
+					n° CR 
+					<!--kadov_tag{{</ignored>}}-->
+					50019)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">In-Sight Explorer peut désormais enregistrer des fichiers de 
+					projet plus volumineux provenant d'un capteur de la série 5600 sur un PC. 
+					Auparavant, lors d'une tentative d'enregistrement d'un fichier de projet de 
+					plus de 1,8&nbsp;Mo, In-Sight Explorer se déconnectait temporairement du 
+					capteur et le projet n'était pas enregistré sur le PC. (n° CR 49835)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">La fonction GetAllTime retourne désormais la valeur correcte 
+					lorsque la Liste de résultats est activée. Auparavant, la fonction GetAllTime 
+					retournait une valeur incorrecte (inférieure) lorsque la Liste de résultats 
+					était activée. (n° CR 49722)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">Le gestionnaire de connexion In-Sight fonctionne désormais 
+					correctement lorsqu'il est exécuté sur un système Microsoft® Windows® 2003 
+					Server dont l'adresse de passerelle est définie sur 0.0.0.0. Auparavant, le 
+					gestionnaire de connexion In-Sight arrêtait de répondre lorsque l'adresse MAC 
+					d'un capteur In-Sight était saisie et appliquée. (n° CR 49826)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">In-Sight Explorer s'installe désormais correctement sur un 
+					système Windows 2003 Server qui ne dispose pas du programme Windows Installer 
+					3.0. 
+					<!--kadov_tag{{<spaces>}}-->
+					<!--kadov_tag{{</spaces>}}-->
+					Auparavant, une erreur InstallShield 1603 apparaissait lors de l'installation 
+					du logiciel In-Sight Explorer 3.4.0 sur un système Windows 2003 Server ne 
+					disposant pas de Windows Installer 3.0. (n° CR 49827)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">La fonction CalibrateImage affiche désormais correctement les 
+					résultats lorsqu'elle fait référence à des données provenant d'une fonction 
+					CalibrateGrid importée. Auparavant, la fonction CalibrateImage renvoyait le 
+					message #ERR lorsqu'elle faisait référence à des données CalibrateGrid 
+					importées. (n° CR 46406)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">La fonction ImageMath a été modifiée et s'affiche désormais 
+					correctement (Outils de vision --&gt; Image). Auparavant, la fonction n'était 
+					pas correctement activée et n'était pas affichée. (n° CR 43885/49630)
+				</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">La séquence vidéo Liste de résultats reste désactivée lorsqu'une 
+					Vue projet est rouverte quand l'affichage de la Liste des résultats est 
+					désactivé et que la mise en page de la Vue projet est enregistrée par le biais 
+					de l'option Enregistrer la mise en page. Auparavant, la séquence vidéo Liste de 
+					résultats était affichée à chaque fois qu'une Vue projet était ouverte, 
+					indépendamment de l'état de l'affichage après l'utilisation de l'option 
+					Enregistrer la mise en page. (n° CR 49266)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">Les paramètres
+					<span style="FONT-STYLE: italic">Première ligne</span>
+					et
+					<span style="FONT-STYLE: italic">Nombre de lignes</span>
+					de la fonction AcquireImage renvoient désormais correctement une acquisition 
+					partielle s'ils sont utilisés sur des capteurs couleur de la série In-Sight 
+					5000. Auparavant, ces paramètres étaient désactivés lors de l'utilisation d'un 
+					capteur couleur. (n° CR 36036)
+				</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">Conformément à la spécification EtherNet/IP, le champ TTL du 
+					trafic de diffusion sélective EtherNet/IP a été changé de 7 à 1. Ce changement 
+					limite le trafic de diffusion sélective à un seul sous-réseau. (n° CR 50000)</p>
+			</li>
+		</ul>
+		<p>-------</p>
+		<p>&nbsp;</p>
+		<p>Portions copyright © 2002-2004 développées par The Genghis Group (<a href="http://www.genghisgroup.com">http://www.genghisgroup.com</a>).</p>
+	</body>
+</html>

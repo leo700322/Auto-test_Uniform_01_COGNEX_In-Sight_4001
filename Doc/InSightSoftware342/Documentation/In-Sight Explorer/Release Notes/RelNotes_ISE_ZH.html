@@ -1,0 +1,193 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+<html>
+	<HEAD>
+		<title>In-Sight&reg; 浏览器发行说明</title> 
+		<!--(==============================================================)-->  <!--(Document created with RoboEditor. )============================--> <!--(==============================================================)-->
+		<!--(Meta)==========================================================-->
+		<meta http-equiv="content-type" content="text/html; charset=GB2312">
+		<meta name="generator" content="RoboHELP by eHelp Corporation - www.ehelp.com">
+		<meta name="generator-major-version" content="0.1">
+		<meta name="generator-minor-version" content="1">
+		<meta name="filetype" content="kadov">
+		<meta name="filetype-version" content="1">
+		<meta name="page-count" content="1">
+		<meta name="layout-height" content="1480">
+		<meta name="layout-width" content="1087">
+		<meta name="x-ignored-words" content="Find*;font(s;PGothic;PMincho;Genghis;www.genghisgroup.com">
+		<!--(Links)=========================================================-->
+		<link rel="StyleSheet" href="RelNotes.css">
+			<!--(Style Sheet)===================================================-->
+			<style> <!-- body { background-image: url(Logo.jpg); _: ; _: ; }
+	--></style>
+		<!--(Body)==========================================================--></HEAD>
+	<body>
+		<!--kadov_tag{{<implicit_p>}}--><img src="RNHeader.png" style="WIDTH: 664px; 											BORDER-TOP-STYLE: none; 											BORDER-RIGHT-STYLE: none; 											BORDER-LEFT-STYLE: none; 											HEIGHT: 154px; 											BORDER-BOTTOM-STYLE: none"
+			width="664" height="154" border="0">
+		<h1>In-Sight&reg; 浏览器 3.4.2 发行说明</h1>
+		<p style="FONT-STYLE: italic"><!--kadov_tag{{<variable name=date 														x-value=39280.401215 														x-format="mmmm d, yyyy">}}--> 
+			2007 年 7 月 18 日<!--kadov_tag{{</variable>}}--> <!--kadov_tag{{<variable name=time 	x-value=39280.401215>}}--> 
+			上午 9:37<!--kadov_tag{{</variable>}}--></p>
+		<p>1999-2007年Cognex Corporation 版权所有。</p>
+		<h1 style="MARGIN-BOTTOM: 9pt">概述</h1>
+		<p>版本 3.4.2 是 In-Sight 
+			浏览器固件/软件的服务版本。此版本提供对各种已知问题的更改和修复，其中包括对“离散输入设置”和“离散输出设置”对话框进行修改以添加对 In-Sight 
+			1400 I/O 扩展模块的支持以及对 In-Sight 5600 系列传感器的固件进行更新。</p>
+		<p class="Bullet">服务版本 3.4.2 添加到了固件/软件版本 3.4.1 中，包含该版本中提供的修复。此服务版本不包含任何新功能；版本 3.4.0 
+			引入了新功能，<span style="FONT-STYLE: italic">In-Sight &reg; 浏览器 3.4.0 发行说明</span>中对这些新功能做了介绍。要查看有关“系统要求”、“已知问题”和“发行历史”的信息，请参阅
+			<span style="FONT-STYLE: italic">In-Sight &reg; 浏览器 3.4.0 发行说明</span>。</p>
+		<p class="Bullet">有关更新的发行说明、文档及其它信息，请访问“In-Sight 联机支持中心”，其网址为：<a href="http://www.cognex.com/products/InSight/Support.asp">www.cognex.com/support/In-Sight.asp</a>
+		</p>
+		<h1>3.4.2 更改与修复</h1>
+		<p class="Bullet"><b style="FONT-WEIGHT: bold">注意</b>：为改进对“<!--kadov_tag{{<ignored>}}-->  Cognex<!--kadov_tag{{</ignored>}}-->
+			技术支持”报告的“已知问题”的跟踪，（在适用的地方）新增了“更改请求”号码 (<!--kadov_tag{{<ignored>}}--> CR#<!--kadov_tag{{</ignored>}}--> 
+			)。</p>
+		<ul>
+			<li style=" COLOR: #000000" class="kadov-p-CBullet">
+				<p class="Bullet"><font style="COLOR: #000000" color="#000000">对“离散输入设置”和“离散输出设置”对话框进行了修改，以提供对 
+						In-Sight 1400 I/O 扩展模块的支持。</font></p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">对 Kuka 机器人串行通信协议进行了修改，以先发送 DLE 
+					响应，再处理“本机模式”命令。以前，处理“本机模式”命令后才会发送确认，这会导致机器人在尝试加载大型作业文件时超时。(CR# 49787)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">现在，In-Sight 5600 系列传感器可以正确地加载包含某些 PatMax 
+					函数的大型作业文件。以前，在某些情况下，尝试加载包含多个 PatMax 
+					函数的大型作业文件时，传感器会断开与网络的连接并且失去响应，提示对传感器重新加电。(CR# 50762)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">ScaleImage（视觉工具 --&gt; 图像）和 VerifyText（视觉工具 --&gt; 
+					OCV/OCR）函数进行了修改，以在与部分采集联用时输出正确的图像。以前，对部分采集的图像使用这些函数时会输出损坏的结果图像。(CR# 50931)</p>
+			</li>
+		</ul>
+		<h1>3.4.1 更改与修复</h1>
+		<p><b style="FONT-WEIGHT: bold">注意</b>：为改进对“ 
+			<!--kadov_tag{{<ignored>}}--> Cognex 
+			<!--kadov_tag{{</ignored>}}--> 
+			技术支持”报告的“已知问题”的跟踪，（在适用的地方）新增了“更改请求”号码 ( 
+			<!--kadov_tag{{<ignored>}}--> CR# 
+			<!--kadov_tag{{</ignored>}}-->
+			)。</p>
+		<ul>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">更正了 In-Sight 5603 和 5403 高分辨率传感器存在的一个问题：执行计算或内存占用高的功能并连同使用 
+					In-Sight 浏览器视图检查结果时，它们会意外地错过采集触发。(CR# 50393)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">在 In-Sight 5600 
+					系列传感器上，执行需要进行大量计算的功能时不再发生图像损坏的情况。以前，图像可能会损坏，而且在某些情况下传感器可能会变得不做出响应。(CR# 50385)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">更正了所有运行固件版本 3.4.0 的 In-Sight 5600 传感器都存在的一个问题。 
+					<!--kadov_tag{{<spaces>}}--> 
+					&nbsp; 
+					<!--kadov_tag{{</spaces>}}-->
+					如果用户曾多次完全填充和擦除传感器上的整个闪存文件系统，则之后重新启动时会导致传感器无法运行的风险是很小的。所有 In-Sight 5600 
+					传感器的固件都应升级到版本 3.4.1。此问题不影响任何其它 In-Sight 传感器型号或固件修订版。(CR# 49919)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">增强了 
+					<!--kadov_tag{{<ignored>}}--> Stringf 
+					<!--kadov_tag{{</ignored>}}--> 
+					函数，使其能够将附加信息字符串返回到电子表格：固件版本 ("%V")；用户连接到的系统类型 ("% 
+					<!--kadov_tag{{<ignored>}}--> 
+					T 
+					<!--kadov_tag{{</ignored>}}--> ")；MAC 地址 ("% 
+					<!--kadov_tag{{<ignored>}}--> M 
+					<!--kadov_tag{{</ignored>}}--> 
+					") 和传感器的序列号 ("% 
+					<!--kadov_tag{{<ignored>}}--> N 
+					<!--kadov_tag{{</ignored>}}--> 
+					")。 
+					<!--kadov_tag{{<spaces>}}--> &nbsp; 
+					<!--kadov_tag{{</spaces>}}--> ( 
+					<!--kadov_tag{{<ignored>}}--> 
+					CR# 
+					<!--kadov_tag{{</ignored>}}-->
+					28899/44109)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">实现了 Rockwell RSLogix 5000 附加配置文件，以帮助简化 
+					<!--kadov_tag{{<ignored>}}--> 
+					Cognex 
+					<!--kadov_tag{{</ignored>}}--> In-Sight 视觉传感器与 RSLogix 5000 之间的集成。安装程序位于 
+					In-Sight 软件光盘中，它将更新现有 RSLogix 5000 安装；要使用这些附加配置文件，必须安装 RSLogix 5000 版本 15.00 
+					或更高版本。( 
+					<!--kadov_tag{{<ignored>}}--> CR# 
+					<!--kadov_tag{{</ignored>}}-->
+					49914/42099)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">修改了 
+					<!--kadov_tag{{<ignored>}}--> ReadIDCode 
+					<!--kadov_tag{{</ignored>}}-->
+					函数的
+					<span style="FONT-STYLE: italic">Mode</span>
+					参数，现在可以正常地为 Code 128、Code 39、Code I2of5、Code 93、UPC、EAN 和 DataMatrix 代码启用<span style="FONT-STYLE: italic">高速度/高对比度</span>设置，同时也可正常地为“邮政编码”禁用该设置。启用<span style="FONT-STYLE: italic">算法</span>复选框时，将<span style="FONT-STYLE: italic">模式</span>参数设置为<span style="FONT-STYLE: italic">高速度/高对比度</span>可缩短印制清晰的 
+					Code 128、Code 39、Code I2of5、Code 93、UPC、EAN 及 DataMatrix 
+					代码的解码时间。在先前版本中，没有为这些代码类型启用<span style="FONT-STYLE: italic">模式</span>参数，并为“邮政编码”不正确地启用了该参数，导致该参数设置为<span style="FONT-STYLE: italic">高速度/高对比度</span>时并未使解码时间得到缩短。( 
+					<!--kadov_tag{{<ignored>}}--> CR# 
+					<!--kadov_tag{{</ignored>}}-->
+					49842)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">
+					<!--kadov_tag{{<ignored>}}--> ValidateIDCode 
+					<!--kadov_tag{{</ignored>}}--> 
+					现在会正确地验证同时包含字母和数字字符的 
+					<!--kadov_tag{{<ignored>}}--> DoDAAC 
+					<!--kadov_tag{{</ignored>}}--> 
+					代码。在先前版本中， 
+					<!--kadov_tag{{<ignored>}}--> ValidateIDCode 
+					<!--kadov_tag{{</ignored>}}--> 
+					会将包含字母字符的 
+					<!--kadov_tag{{<ignored>}}--> DoDAAC 
+					<!--kadov_tag{{</ignored>}}--> 
+					代码报告为无效代码。( 
+					<!--kadov_tag{{<ignored>}}--> CR# 
+					<!--kadov_tag{{</ignored>}}-->
+					49920)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">现在，在仿真器中使用 
+					<!--kadov_tag{{<ignored>}}--> LatchImage 
+					<!--kadov_tag{{</ignored>}}-->
+					函数进行编程时，如果<span style="FONT-STYLE: italic">区域</span>参数的“高”或“宽”设置引用空单元格，将会返回错误代码。在先前版本中，在仿真器中使用 
+					<!--kadov_tag{{<ignored>}}--> LatchImage 
+					<!--kadov_tag{{</ignored>}}-->
+					函数时，如果<span style="FONT-STYLE: italic">区域</span>参数的“高”或“宽”设置之一引用了空单元格，仿真器将不做响应。( 
+					<!--kadov_tag{{<ignored>}}--> CR# 
+					<!--kadov_tag{{</ignored>}}-->
+					50019)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">现在，In-Sight 浏览器可将更大的作业文件从 5600 系列传感器保存到 PC。在先前版本中，尝试保存超过 1.8MB 
+					的作业文件时，In-Sight 浏览器会暂时断开与传感器的连接，作业将不会保存到 PC。(CR# 49835)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">现在启用“结果队列”时 GetAllTime 函数会返回正确的值。在先前版本中，启用“结果队列”时 GetAllTime 
+					函数会返回不正确（较低）的值。(CR# 49722)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">现在，在网关地址设置为 0.0.0.0 的 Microsoft&reg; Windows&reg; 2003 Server 
+					系统上运行时，“In-Sight 连接管理器”可以正常地工作。在先前版本中，输入并应用 In-Sight 传感器的 MAC 地址后，“In-Sight 
+					连接管理器”将不做响应。(CR# 49826)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">In-Sight 浏览器现在可以正确地安装在未安装 Windows Installer 3.0 的 Windows 2003 
+					Server 上。 
+					<!--kadov_tag{{<spaces>}}--> &nbsp; 
+					<!--kadov_tag{{</spaces>}}-->
+					在先前版本中，在未安装 Windows Installer 3.0 的 Windows 2003 Server 上安装 In-Sight 浏览器 3.4.0 
+					时会出现 InstallShield 1603 错误。(CR# 49827)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">现在 CalibrateImage 函数从导入的 CalibrateGrid 
+					函数引用数据时会正确地显示结果。在先前版本中，CalibrateImage 引用导入的 CalibrateGrid 数据时会返回错误代码。(CR# 
+					46406)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">修改了 ImageMath 函数，现在已可正确地显示（视觉工具 --&gt; 
+					图像）。在先前版本中，该函数未被正常启用，不会显示出来。(CR# 43885/49630)
+				</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">如果关闭“结果队列”显示并使用“保存布局”选项保存“作业视图”的布局，则重新打开“作业视图”时“结果队列”胶片仍为关闭状态。在先前版本中，只要打开“作业视图”，无论使用“保存布局”选项之后的显示状态为何，均会显示“结果队列”胶片。(CR# 
+					49266)</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">现在，在 In-Sight 5000 系列彩色传感器上使用 AcquireImage 函数的<span style="FONT-STYLE: italic">开始行</span>和<span style="FONT-STYLE: italic">行数</span>参数时，它们会正常地返回部分采集。在先前版本中，使用彩色传感器时会禁用这些参数。(CR# 
+					36036)
+				</p>
+			<li class="kadov-p-CBullet">
+				<p class="Bullet">已遵循 EtherNet/IP 规范将 EtherNet/IP 组播通信量的 TTL 从 7 更改为 
+					1。此更改将组播通信量限制为单个子网。(CR# 50000)</p>
+			</li>
+		</ul>
+		<p>-------</p>
+		<p>&nbsp;</p>
+		<p>各部分版权所有 &copy;2002-2004 The Genghis Group (<a href="http://www.genghisgroup.com">http://www.genghisgroup.com</a>)。</p>
+	</body>
+</html>
